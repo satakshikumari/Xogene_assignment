@@ -1,0 +1,39 @@
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  margin: 40px;
+}
+
+.loader-div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: loader 500ms;
+  animation-iteration-count: infinite;
+  box-sizing: border-box;
+}
+
+.loader.text {
+}
+
+@keyframes loader {
+  0% {
+    border-left: none;
+    border-top: 1.5px solid black;
+  }
+  33% {
+    border-top: none;
+    border-right: 1.5px solid black;
+  }
+  66% {
+    border-right: none;
+    border-bottom: 1.5px solid black;
+  }
+  100% {
+    border-bottom: none;
+    border-left: 1.5px solid black;
+  }
+}
